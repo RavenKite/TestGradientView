@@ -1,0 +1,16 @@
+PODS:
+  - RKAPPMonitorView (0.1.2)
+
+DEPENDENCIES:
+  - RKAPPMonitorView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RKAPPMonitorView
+
+SPEC CHECKSUMS:
+  RKAPPMonitorView: 4c770188e8938cefea76994e134f3be2055cfc16
+
+PODFILE CHECKSUM: 723528a8207e08de02d8ef1c9050757237ea0b16
+
+COCOAPODS: 1.5.3

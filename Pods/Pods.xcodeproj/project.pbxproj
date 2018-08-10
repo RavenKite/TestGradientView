@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		197F0B4EA4DF1B84DF05993688928582 /* RKAPPMonitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF084636FDF7F259FDDA4A8458B94CA /* RKAPPMonitorView.m */; };
+		762B254B54580666209E9C970E41AA0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		A8D48AD0B9A82D84E76AF71766F9FB9D /* RKAPPMonitorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B5DC91F63D469EB7F05A0AE203FDDF /* RKAPPMonitorView-dummy.m */; };
+		CE9447FFC7A2BBA77931C9F738E595D7 /* Pods-GradientViewProj-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE04967D0860D4A0BF62D7996167359 /* Pods-GradientViewProj-dummy.m */; };
+		DC95760FB685F1C63C5E479B6B3B83B8 /* RKAPPMonitorView.h in Headers */ = {isa = PBXBuildFile; fileRef = BBCA92EA53ED8615C291E56B0119EDB3 /* RKAPPMonitorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB83F8E3F9D4FED1395013266C253944 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAA6FDC1373F4F9E6EF82AB5E1ED21D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E16A1676A0A6044106F63192358BAF1D;
+			remoteInfo = RKAPPMonitorView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018519DC0EBC121A6911A8E74FDD80DF /* RKAPPMonitorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RKAPPMonitorView.xcconfig; sourceTree = "<group>"; };
+		113B9D443198D515EE0F9676FC6AFA99 /* RKAPPMonitorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RKAPPMonitorView-prefix.pch"; sourceTree = "<group>"; };
+		23E6210E1178AD1BC8DB503815EB354B /* Pods-GradientViewProj-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GradientViewProj-resources.sh"; sourceTree = "<group>"; };
+		2A48A1B7BA2F24C06F015804695FC054 /* libPods-GradientViewProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradientViewProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC1DECAAD41E7B1400C7ED36F5ED02D /* Pods-GradientViewProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientViewProj.release.xcconfig"; sourceTree = "<group>"; };
+		4AF9DD59AC1E19DDC2DD10AA45349C53 /* Pods-GradientViewProj-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GradientViewProj-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5CF084636FDF7F259FDDA4A8458B94CA /* RKAPPMonitorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKAPPMonitorView.m; path = RKAPPMonitorView/Classes/RKAPPMonitorView.m; sourceTree = "<group>"; };
+		8FBD4CBFAA3ACF1C6A568F2CB39BE496 /* libRKAPPMonitorView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRKAPPMonitorView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BBCA92EA53ED8615C291E56B0119EDB3 /* RKAPPMonitorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKAPPMonitorView.h; path = RKAPPMonitorView/Classes/RKAPPMonitorView.h; sourceTree = "<group>"; };
+		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BEE0476042DAFD74E06669C5F346AFF6 /* Pods-GradientViewProj-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GradientViewProj-frameworks.sh"; sourceTree = "<group>"; };
+		BEE04967D0860D4A0BF62D7996167359 /* Pods-GradientViewProj-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GradientViewProj-dummy.m"; sourceTree = "<group>"; };
+		E34CF16A6B2B4D86A97390B9E8890021 /* Pods-GradientViewProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientViewProj.debug.xcconfig"; sourceTree = "<group>"; };
+		F53C8B233EE3C458E953F130FAA5EA25 /* Pods-GradientViewProj-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GradientViewProj-acknowledgements.plist"; sourceTree = "<group>"; };
+		F6B5DC91F63D469EB7F05A0AE203FDDF /* RKAPPMonitorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RKAPPMonitorView-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1770F3E89310AC29CE1158A9CBE901CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32BBDD0EA4F182A6A127716E6EDC129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB83F8E3F9D4FED1395013266C253944 /* Foundation.framework in Frameworks */,
+				762B254B54580666209E9C970E41AA0D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
+				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		23B8447F2129CD487E40775F69C874BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A48A1B7BA2F24C06F015804695FC054 /* libPods-GradientViewProj.a */,
+				8FBD4CBFAA3ACF1C6A568F2CB39BE496 /* libRKAPPMonitorView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		303FDD6E01EBD2CC3F502DB44A5CE9F2 /* RKAPPMonitorView */ = {
+			isa = PBXGroup;
+			children = (
+				BBCA92EA53ED8615C291E56B0119EDB3 /* RKAPPMonitorView.h */,
+				5CF084636FDF7F259FDDA4A8458B94CA /* RKAPPMonitorView.m */,
+				9266902B0D5DAC4BABF185CDE4A38C65 /* Support Files */,
+			);
+			path = RKAPPMonitorView;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A06AF29654924B5BB582B004F60218B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				303FDD6E01EBD2CC3F502DB44A5CE9F2 /* RKAPPMonitorView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C0AC1611AE1CBAD2DAF02C13C5E07DA /* Pods-GradientViewProj */ = {
+			isa = PBXGroup;
+			children = (
+				4AF9DD59AC1E19DDC2DD10AA45349C53 /* Pods-GradientViewProj-acknowledgements.markdown */,
+				F53C8B233EE3C458E953F130FAA5EA25 /* Pods-GradientViewProj-acknowledgements.plist */,
+				BEE04967D0860D4A0BF62D7996167359 /* Pods-GradientViewProj-dummy.m */,
+				BEE0476042DAFD74E06669C5F346AFF6 /* Pods-GradientViewProj-frameworks.sh */,
+				23E6210E1178AD1BC8DB503815EB354B /* Pods-GradientViewProj-resources.sh */,
+				E34CF16A6B2B4D86A97390B9E8890021 /* Pods-GradientViewProj.debug.xcconfig */,
+				2DC1DECAAD41E7B1400C7ED36F5ED02D /* Pods-GradientViewProj.release.xcconfig */,
+			);
+			name = "Pods-GradientViewProj";
+			path = "Target Support Files/Pods-GradientViewProj";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				4A06AF29654924B5BB582B004F60218B /* Pods */,
+				23B8447F2129CD487E40775F69C874BB /* Products */,
+				E64A16CF14340A23681BCA77BDE43BB2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9266902B0D5DAC4BABF185CDE4A38C65 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				018519DC0EBC121A6911A8E74FDD80DF /* RKAPPMonitorView.xcconfig */,
+				F6B5DC91F63D469EB7F05A0AE203FDDF /* RKAPPMonitorView-dummy.m */,
+				113B9D443198D515EE0F9676FC6AFA99 /* RKAPPMonitorView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RKAPPMonitorView";
+			sourceTree = "<group>";
+		};
+		E64A16CF14340A23681BCA77BDE43BB2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AC1611AE1CBAD2DAF02C13C5E07DA /* Pods-GradientViewProj */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9628CE42B9CFE2195A5A46A55DE04D77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC95760FB685F1C63C5E479B6B3B83B8 /* RKAPPMonitorView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		97E89A7AF08B7B4B76E7D60087E9124C /* Pods-GradientViewProj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A5828EF89B8595E2D6AFE87E4A55B2 /* Build configuration list for PBXNativeTarget "Pods-GradientViewProj" */;
+			buildPhases = (
+				CCF1022E7FB3EFD9052EB085DD9D1524 /* Sources */,
+				1770F3E89310AC29CE1158A9CBE901CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9475CD6BD705996C79D3CA8ED92ADD52 /* PBXTargetDependency */,
+			);
+			name = "Pods-GradientViewProj";
+			productName = "Pods-GradientViewProj";
+			productReference = 2A48A1B7BA2F24C06F015804695FC054 /* libPods-GradientViewProj.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E16A1676A0A6044106F63192358BAF1D /* RKAPPMonitorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D5A49F9DDB8B055E5BEDB8517A97681 /* Build configuration list for PBXNativeTarget "RKAPPMonitorView" */;
+			buildPhases = (
+				A369DB21D120E4417BEA9ABE29C31E5D /* Sources */,
+				E32BBDD0EA4F182A6A127716E6EDC129 /* Frameworks */,
+				9628CE42B9CFE2195A5A46A55DE04D77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RKAPPMonitorView;
+			productName = RKAPPMonitorView;
+			productReference = 8FBD4CBFAA3ACF1C6A568F2CB39BE496 /* libRKAPPMonitorView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 23B8447F2129CD487E40775F69C874BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97E89A7AF08B7B4B76E7D60087E9124C /* Pods-GradientViewProj */,
+				E16A1676A0A6044106F63192358BAF1D /* RKAPPMonitorView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A369DB21D120E4417BEA9ABE29C31E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D48AD0B9A82D84E76AF71766F9FB9D /* RKAPPMonitorView-dummy.m in Sources */,
+				197F0B4EA4DF1B84DF05993688928582 /* RKAPPMonitorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF1022E7FB3EFD9052EB085DD9D1524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9447FFC7A2BBA77931C9F738E595D7 /* Pods-GradientViewProj-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9475CD6BD705996C79D3CA8ED92ADD52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RKAPPMonitorView;
+			target = E16A1676A0A6044106F63192358BAF1D /* RKAPPMonitorView */;
+			targetProxy = DAA6FDC1373F4F9E6EF82AB5E1ED21D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B12B2FE86A219BB355B9E1557B65F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018519DC0EBC121A6911A8E74FDD80DF /* RKAPPMonitorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RKAPPMonitorView/RKAPPMonitorView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RKAPPMonitorView;
+				PRODUCT_NAME = RKAPPMonitorView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		229F8EC6AA04F266384EE01B9B571543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E34CF16A6B2B4D86A97390B9E8890021 /* Pods-GradientViewProj.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		817260C5AD592D2A5965D55B0EDD55E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC1DECAAD41E7B1400C7ED36F5ED02D /* Pods-GradientViewProj.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCA8A58C1AA4637F06C29D5063AFDD4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018519DC0EBC121A6911A8E74FDD80DF /* RKAPPMonitorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RKAPPMonitorView/RKAPPMonitorView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RKAPPMonitorView;
+				PRODUCT_NAME = RKAPPMonitorView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D5A49F9DDB8B055E5BEDB8517A97681 /* Build configuration list for PBXNativeTarget "RKAPPMonitorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA8A58C1AA4637F06C29D5063AFDD4F /* Debug */,
+				1B12B2FE86A219BB355B9E1557B65F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25A5828EF89B8595E2D6AFE87E4A55B2 /* Build configuration list for PBXNativeTarget "Pods-GradientViewProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229F8EC6AA04F266384EE01B9B571543 /* Debug */,
+				817260C5AD592D2A5965D55B0EDD55E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
