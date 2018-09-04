@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E16A1676A0A6044106F63192358BAF1D"
+               BlueprintIdentifier = "271593E06110B041163A0E5323839BA8"
                BuildableName = "libRKAPPMonitorView.a"
                BlueprintName = "RKAPPMonitorView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E16A1676A0A6044106F63192358BAF1D"
+            BlueprintIdentifier = "271593E06110B041163A0E5323839BA8"
             BuildableName = "libRKAPPMonitorView.a"
             BlueprintName = "RKAPPMonitorView"
             ReferencedContainer = "container:Pods.xcodeproj">

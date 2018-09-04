@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "97E89A7AF08B7B4B76E7D60087E9124C"
+               BlueprintIdentifier = "5E1FF65DA1A53709142004AFFDF1BB76"
                BuildableName = "libPods-GradientViewProj.a"
                BlueprintName = "Pods-GradientViewProj"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "97E89A7AF08B7B4B76E7D60087E9124C"
+            BlueprintIdentifier = "5E1FF65DA1A53709142004AFFDF1BB76"
             BuildableName = "libPods-GradientViewProj.a"
             BlueprintName = "Pods-GradientViewProj"
             ReferencedContainer = "container:Pods.xcodeproj">

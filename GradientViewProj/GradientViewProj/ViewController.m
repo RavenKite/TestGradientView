@@ -8,8 +8,11 @@
 
 
 #import "ViewController.h"
-#import "UIImage+TranslateColor.h"
 #import <RKAPPMonitorView/RKAPPMonitorView.h>
+#import "UIImage+TranslateColor.h"
+#import "PageViewController.h"
+#import "KaraokeModule.h"
+
 
 @interface ViewController ()
 
@@ -22,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *pixelLabel;
 
 @property (nonatomic, strong) dispatch_source_t timer;
+
+@property (nonatomic, strong) NSArray<NSString *> *dataSource;
 
 @end
 
@@ -44,37 +49,32 @@
 
 // MARK: - Action
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"PushPageViewController"] || [segue.destinationViewController isKindOfClass:PageViewController.class]) {
+        PageViewController *pageViewController = (PageViewController *)segue.destinationViewController;
+        pageViewController.dataSource = self.dataSource;
+    }
+    
+}
+
 - (IBAction)executionGradientAnimation:(UIBarButtonItem *)sender {
     sender.enabled = false;
     
-    [self beginTimerWithInvalidateDelay:5];
-}
-
-- (void)translateColorWithProgress:(CGFloat)progress {
-    if (progress > 1) {
-        self.imageView.image = [UIImage imageNamed:@"demo"];
-        return;
-    }
-//    NSLog(@"progress: %.f%%", progress*100);
-
-    UIImage *image = self.imageView.image;
-    CGRect rect = CGRectZero;
-
-    int row = 2;
-    if (progress >= 0.5) {
-        CGFloat p = progress - 0.5;
-        rect = CGRectMake(0, image.size.height/row, image.size.width*p*row, image.size.height/row);
-    } else {
-        rect = CGRectMake(0, 0, image.size.width*progress*row, image.size.height/row);
-    }
+    UIImage *image = [UIImage imageNamed:@"demo"];
     
-    image = [image translatePixelColorByTargetNearBlackColor:[UIColor colorWithRGBHex:0x000000]
-                                              nearWhiteColor:[UIColor colorWithRGBHex:0x323232]
-                                                  transColor:[UIColor redColor]
-                                                      inRect:rect];
-//    image = [image translatePixelColorByTargetNearBlackColorHex:0x000000 nearWhiteColorHex:0x323232 transColorHex:0xFF0000 inRect:rect];
+    KaraokeModule *module = [[KaraokeModule alloc] init];
+    [module configurationImage:image inRect:self.imageView.frame dataSource:[self karaokeDataSource]];
     
-    self.imageView.image = image;
+    UIImageView *imageView = module.imageView;
+    [self.view addSubview:imageView];
+    
+    [module beginKaraokeAnimation];
+    
+    module.karaokeDidEnd = ^{
+        sender.enabled = true;
+        [imageView removeFromSuperview];
+    };
 }
 
 
@@ -91,25 +91,27 @@
     self.pixelLabel.text = [NSString stringWithFormat:@"0x%X", color.RGB];
 }
 
-- (void)beginTimerWithInvalidateDelay:(NSTimeInterval)delay {   // GCD定时器
-    __block NSTimeInterval cancel = delay;
+- (NSArray<KaraokeModel *> *)karaokeDataSource {
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"lrc" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:filepath];
     
-    dispatch_queue_t queue = dispatch_get_main_queue();
-    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
-    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 0.1 * NSEC_PER_SEC, NSEC_PER_MSEC * NSEC_PER_SEC);
-    dispatch_source_set_event_handler(timer, ^{
-        cancel -= 0.1;
-        
-        if (cancel <= 0) {
-            dispatch_source_cancel(timer);
-            self.rightBarItem.enabled = true;
-        }
-        
-        [self translateColorWithProgress:1-cancel/delay];
-    });
-    dispatch_resume(timer);
+    NSArray<NSDictionary *> *metaAry = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     
-    self.timer = timer;
+    NSMutableArray<KaraokeModel *> *array = [NSMutableArray arrayWithCapacity:metaAry.count];
+    for (NSDictionary *dic in metaAry) {
+        KaraokeModel *model = [[KaraokeModel alloc] init];
+        model.content = dic[@"content"];
+        model.begin = [dic[@"begin"] floatValue];
+        model.end = [dic[@"end"] floatValue];
+        model.x = [dic[@"x"] floatValue];
+        model.y = [dic[@"y"] floatValue];
+        model.width = [dic[@"width"] floatValue];
+        model.height = [dic[@"height"] floatValue];
+        
+        [array addObject:model];
+    }
+    
+    return array;
 }
 
 
@@ -127,7 +129,27 @@
     
     CGPoint touchPoint = [touches.anyObject locationInView:self.view];
     [self colorMeterAtPoint:touchPoint];
+    
 }
+
+
+// MARK: - Getter & Setter
+
+- (NSArray<NSString *> *)dataSource {
+    if (!_dataSource) {
+        NSInteger count = 19;
+        NSMutableArray<NSString *> *array = [NSMutableArray arrayWithCapacity:count];
+        for (NSInteger i = 0; i < count; i++) {
+            NSString *str = @"单独编译MTFramework项目时，需要在模拟器和真机环境下各编译一次（真机环境编译的只能在真机环境运行，模拟器同理），然后在Products下的MTFramework.framework上右键，选择show in finder，可以看到模拟器和真机编译生成的framework。\n合并模拟器和真机的编译文件需要使用终端命令，且合并的并不是MTFramework.framework本身，而是其内部的MTFramework二进制文件。命令如下：\nlipo -create 第一个framework下二进制文件的绝对路径 第二个framework下二进制文件的绝对路径 -output 最终的二进制文件路径\n";
+            
+            [array addObject:str];
+        }
+        
+        _dataSource = [NSArray arrayWithArray:array];
+    }
+    return _dataSource;
+}
+
 
 
 

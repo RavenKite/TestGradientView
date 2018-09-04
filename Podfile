@@ -6,6 +6,8 @@ def common_pods
     
     pod 'RKAPPMonitorView'
     
+    pod 'Masonry'
+    
 end
 
 target 'GradientViewProj' do

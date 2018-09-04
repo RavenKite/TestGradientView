@@ -1,16 +1,20 @@
 PODS:
+  - Masonry (1.1.0)
   - RKAPPMonitorView (0.1.2)
 
 DEPENDENCIES:
+  - Masonry
   - RKAPPMonitorView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Masonry
     - RKAPPMonitorView
 
 SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RKAPPMonitorView: 4c770188e8938cefea76994e134f3be2055cfc16
 
-PODFILE CHECKSUM: 723528a8207e08de02d8ef1c9050757237ea0b16
+PODFILE CHECKSUM: edcbe011070c3eeceba5e4a125721e7e80e2cbb3
 
 COCOAPODS: 1.5.3

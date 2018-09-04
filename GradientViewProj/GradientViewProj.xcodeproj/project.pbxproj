@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6B51232AD903DFCBB87551A7 /* libPods-GradientViewProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF45D362412101A16B29D5B /* libPods-GradientViewProj.a */; };
+		E905D340212264FF00CE656D /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E905D33F212264FF00CE656D /* PageViewController.m */; };
+		E905D34321226E1500CE656D /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E905D34221226E1500CE656D /* PageContentViewController.m */; };
+		E905D34C212BA24200CE656D /* KaraokeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E905D34B212BA24200CE656D /* KaraokeView.m */; };
+		E905D34E212C069700CE656D /* lrc.json in Resources */ = {isa = PBXBuildFile; fileRef = E905D34D212C069700CE656D /* lrc.json */; };
+		E905D351212C086600CE656D /* KaraokeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E905D350212C086600CE656D /* KaraokeModule.m */; };
 		E95CBD0A21193645006F3BDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E95CBD0921193645006F3BDC /* AppDelegate.m */; };
 		E95CBD0D21193646006F3BDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95CBD0C21193646006F3BDC /* ViewController.m */; };
 		E95CBD1021193646006F3BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95CBD0E21193646006F3BDC /* Main.storyboard */; };
@@ -20,6 +25,15 @@
 /* Begin PBXFileReference section */
 		0DF45D362412101A16B29D5B /* libPods-GradientViewProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GradientViewProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB47BAD31CD10498B0D9CF2 /* Pods-GradientViewProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradientViewProj.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GradientViewProj/Pods-GradientViewProj.debug.xcconfig"; sourceTree = "<group>"; };
+		E905D33E212264FF00CE656D /* PageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		E905D33F212264FF00CE656D /* PageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		E905D34121226E1500CE656D /* PageContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		E905D34221226E1500CE656D /* PageContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		E905D34A212BA24200CE656D /* KaraokeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaraokeView.h; sourceTree = "<group>"; };
+		E905D34B212BA24200CE656D /* KaraokeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaraokeView.m; sourceTree = "<group>"; };
+		E905D34D212C069700CE656D /* lrc.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lrc.json; sourceTree = "<group>"; };
+		E905D34F212C086600CE656D /* KaraokeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KaraokeModule.h; sourceTree = "<group>"; };
+		E905D350212C086600CE656D /* KaraokeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaraokeModule.m; sourceTree = "<group>"; };
 		E95CBD0521193645006F3BDC /* GradientViewProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientViewProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95CBD0821193645006F3BDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E95CBD0921193645006F3BDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,8 +105,17 @@
 				E95CBD0921193645006F3BDC /* AppDelegate.m */,
 				E95CBD0B21193646006F3BDC /* ViewController.h */,
 				E95CBD0C21193646006F3BDC /* ViewController.m */,
+				E905D33E212264FF00CE656D /* PageViewController.h */,
+				E905D33F212264FF00CE656D /* PageViewController.m */,
+				E905D34121226E1500CE656D /* PageContentViewController.h */,
+				E905D34221226E1500CE656D /* PageContentViewController.m */,
 				E95CBD22211A94A4006F3BDC /* UIImage+TranslateColor.h */,
 				E95CBD23211A94A4006F3BDC /* UIImage+TranslateColor.m */,
+				E905D34F212C086600CE656D /* KaraokeModule.h */,
+				E905D350212C086600CE656D /* KaraokeModule.m */,
+				E905D34A212BA24200CE656D /* KaraokeView.h */,
+				E905D34B212BA24200CE656D /* KaraokeView.m */,
+				E905D34D212C069700CE656D /* lrc.json */,
 				E95CBD1121193647006F3BDC /* Assets.xcassets */,
 				E95CBD1621193647006F3BDC /* Info.plist */,
 				E95CBD1721193647006F3BDC /* main.m */,
@@ -159,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95CBD1521193647006F3BDC /* LaunchScreen.storyboard in Resources */,
+				E905D34E212C069700CE656D /* lrc.json in Resources */,
 				E95CBD1221193647006F3BDC /* Assets.xcassets in Resources */,
 				E95CBD1021193646006F3BDC /* Main.storyboard in Resources */,
 			);
@@ -193,9 +217,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95CBD0D21193646006F3BDC /* ViewController.m in Sources */,
+				E905D34C212BA24200CE656D /* KaraokeView.m in Sources */,
+				E905D351212C086600CE656D /* KaraokeModule.m in Sources */,
 				E95CBD1821193647006F3BDC /* main.m in Sources */,
 				E95CBD0A21193645006F3BDC /* AppDelegate.m in Sources */,
 				E95CBD24211A94A4006F3BDC /* UIImage+TranslateColor.m in Sources */,
+				E905D340212264FF00CE656D /* PageViewController.m in Sources */,
+				E905D34321226E1500CE656D /* PageContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

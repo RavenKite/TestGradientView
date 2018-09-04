@@ -144,6 +144,7 @@ CG_INLINE CGRect CGRectScale(CGRect rect, CGFloat scale) {
     return [self translatePixelColorByTargetNearBlackColorRGBA:nearBlackRGBA nearWhiteColorRGBA:nearWhiteRGBA transColorRGBA:transRGBA inRect:rect];
 }
 
+
 - (UIImage *)translatePixelColorByTargetNearBlackColorRGBA:(UInt32)nearBlackRGBA
                                         nearWhiteColorRGBA:(UInt32)nearWhiteRGBA
                                             transColorRGBA:(UInt32)transRGBA
@@ -159,8 +160,8 @@ CG_INLINE CGRect CGRectScale(CGRect rect, CGFloat scale) {
     
     UIImage *transImage = nil;
     
-    const int imageWidth = self.size.width;
-    const int imageHeight = self.size.height;
+    int imageWidth = self.size.width;
+    int imageHeight = self.size.height;
     
     size_t bytesPerRow = imageWidth * 4;
     uint32_t *rgbImageBuf = (uint32_t *)malloc(bytesPerRow * imageHeight);
@@ -176,7 +177,7 @@ CG_INLINE CGRect CGRectScale(CGRect rect, CGFloat scale) {
     uint32_t *pCurPtr = rgbImageBuf;
     pCurPtr += (long)(rect.origin.y*imageWidth);    // 将指针移动到初始行的起始位置
     
-    // 遍历次数：rect.size.width * rect.size.height
+    // 空间复杂度：O(rect.size.width * rect.size.height)
     for (int i = rect.origin.y; i < CGRectGetMaxY(rect); i++) {                     // row
         pCurPtr += (long)rect.origin.x;             // 将指针移动到当前行的起始列
         
@@ -187,15 +188,15 @@ CG_INLINE CGRect CGRectScale(CGRect rect, CGFloat scale) {
             uint8_t *ptr = (uint8_t *)pCurPtr;
             ptr[3] = (transRGBA >> 24) & 0xFF;              // R
             ptr[2] = (transRGBA >> 16) & 0xFF;              // G
-            ptr[1] = (transRGBA >> 8) & 0xFF;               // B
+            ptr[1] = (transRGBA >> 8)  & 0xFF;              // B
         }
         
-        pCurPtr += (long)(imageWidth - CGRectGetMaxX(rect));    // 将指针移动到当前行的末尾列
+        pCurPtr += (long)(imageWidth - CGRectGetMaxX(rect));    // 将指针移动到下一行的起始列
     }
     
     
     // 输出图片
-    CGDataProviderRef dataProvider = CGDataProviderCreateWithData(NULL, rgbImageBuf, bytesPerRow * imageHeight, ProviderReleaseData);
+    CGDataProviderRef dataProvider = CGDataProviderCreateWithData(NULL, rgbImageBuf, bytesPerRow * imageHeight, providerReleaseDataCallback);
     CGImageRef imageRef = CGImageCreate(imageWidth, imageHeight, 8, 32, bytesPerRow, colorSpace,
                                         kCGImageAlphaLast | kCGBitmapByteOrder32Little, dataProvider,
                                         NULL, true, kCGRenderingIntentDefault);
@@ -252,7 +253,7 @@ CG_INLINE CGRect CGRectScale(CGRect rect, CGFloat scale) {
 
 // MARK: - Private Methods
 
-void ProviderReleaseData (void *info, const void *data, size_t size) {
+void providerReleaseDataCallback (void *info, const void *data, size_t size) {
     free((void*)data);
 }
 
@@ -270,6 +271,10 @@ void ProviderReleaseData (void *info, const void *data, size_t size) {
 
 
 @end
+
+
+
+
 
 
 

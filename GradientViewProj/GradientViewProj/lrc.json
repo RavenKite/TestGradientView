@@ -1,0 +1,41 @@
+[
+    {
+        "content": "Good morning! ",
+        "begin": 0,
+        "end": 1.8,
+        "x": 0.066,
+        "y": 0.284,
+        "width": 0.525,
+        "height": 0.221
+    },
+
+    {
+        "content": "I'm Miss Wu. ",
+        "begin": 1.9,
+        "end": 2.7,
+        "x": 0.553,
+        "y": 0.284,
+        "width": 0.379,
+        "height": 0.221
+    },
+
+    {
+        "content": "What's your ",
+        "begin": 2.7,
+        "end": 4.5,
+        "x": 0.066,
+        "y": 0.547,
+        "width": 0.386,
+        "height": 0.221
+    },
+
+    {
+        "content": "name?",
+        "begin": 4.5,
+        "end": 7.0,
+        "x": 0.445,
+        "y": 0.547,
+        "width": 0.232,
+        "height": 0.221
+    }
+]
